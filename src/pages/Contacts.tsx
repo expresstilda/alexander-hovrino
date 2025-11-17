@@ -139,7 +139,7 @@ const Contacts = () => {
             <Button
               size="lg"
               variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary font-oswald uppercase"
+              className="border-primary-foreground text-black bg-primary-foreground hover:bg-primary-foreground/90 font-oswald uppercase"
               onClick={() => window.open("https://yandex.ru/maps/?text=Москва, Флотская ул., 7, корп. 3", "_blank")}
             >
               Проложить маршрут
