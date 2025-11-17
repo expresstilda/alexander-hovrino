@@ -1,7 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Calendar } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const NewsSection = () => {
+  const navigate = useNavigate();
+  
   const news = [
     {
       title: "Новинка: Garmin LiveScope Plus с улучшенным разрешением",
@@ -63,6 +66,7 @@ const NewsSection = () => {
           <Button
             size="lg"
             className="bg-accent hover:bg-accent/90"
+            onClick={() => navigate("/news")}
           >
             Все новости
           </Button>
