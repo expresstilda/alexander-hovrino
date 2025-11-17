@@ -32,6 +32,12 @@ const Navigation = () => {
       return;
     }
     
+    if (id === "news") {
+      navigate("/news");
+      setIsMobileMenuOpen(false);
+      return;
+    }
+    
     if (location.pathname !== "/") {
       navigate("/");
       setTimeout(() => {
