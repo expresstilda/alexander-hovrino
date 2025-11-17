@@ -20,7 +20,7 @@ const Footer = () => {
                 Экспертное оснащение лодок и катеров под ключ
               </p>
               <div className="space-y-2 text-sm font-inter">
-                <p>Телефон: +7 (495) 123-45-67</p>
+                <p>Телефон: +7 (962) 462-93-15</p>
                 <p>Email: info@hovrino.ru</p>
               </div>
             </div>
@@ -116,7 +116,7 @@ const Footer = () => {
                   <Youtube className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://wa.me/79151234567"
+                  href="https://wa.me/79624629315"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-accent transition-colors"

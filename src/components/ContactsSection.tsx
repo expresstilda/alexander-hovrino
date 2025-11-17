@@ -37,10 +37,10 @@ const ContactsSection = () => {
                 <div>
                   <h3 className="text-xl font-oswald mb-1">Телефон</h3>
                   <a
-                    href="tel:+74951234567"
+                    href="tel:+79624629315"
                     className="text-base font-inter font-semibold hover:text-accent transition-colors"
                   >
-                    +7 (495) 123-45-67
+                    +7 (962) 462-93-15
                   </a>
                 </div>
               </div>
@@ -61,12 +61,12 @@ const ContactsSection = () => {
                 <div>
                   <h3 className="text-xl font-oswald mb-1">WhatsApp</h3>
                   <a
-                    href="https://wa.me/79151234567"
+                    href="https://wa.me/79624629315"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-base font-inter hover:text-accent transition-colors"
                   >
-                    +7 (915) 123-45-67
+                    +7 (962) 462-93-15
                   </a>
                 </div>
               </div>
