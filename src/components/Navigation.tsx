@@ -1,0 +1,122 @@
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
+
+const Navigation = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsMobileMenuOpen(false);
+    }
+  };
+
+  const navItems = [
+    { label: "Главная", id: "hero" },
+    { label: "Продукция", id: "products" },
+    { label: "О нас", id: "about" },
+    { label: "Новости", id: "news" },
+    { label: "Контакты", id: "contacts" },
+  ];
+
+  return (
+    <>
+      {/* Avito Banner */}
+      <div className="bg-accent text-accent-foreground text-center py-2 px-4 text-sm font-inter">
+        Вся продукция доступна в нашем{" "}
+        <a
+          href="https://www.avito.ru/brands/alexandrhovrino"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline font-semibold hover:opacity-80 transition-opacity"
+        >
+          магазине на Авито
+        </a>
+      </div>
+
+      {/* Navigation */}
+      <nav
+        className={`fixed top-10 left-0 right-0 z-50 transition-all duration-300 ${
+          isScrolled ? "bg-primary shadow-lg" : "bg-primary/95 backdrop-blur-sm"
+        }`}
+      >
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-16">
+            {/* Logo */}
+            <button
+              onClick={() => scrollToSection("hero")}
+              className="text-primary-foreground font-oswald text-xl font-semibold hover:text-accent transition-colors"
+            >
+              Alexander Ховрино
+            </button>
+
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center space-x-8">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="text-primary-foreground hover:text-accent transition-colors font-inter text-sm"
+                >
+                  {item.label}
+                </button>
+              ))}
+              <Button
+                variant="default"
+                size="sm"
+                onClick={() => scrollToSection("consultation")}
+                className="bg-accent hover:bg-accent/90"
+              >
+                Консультация
+              </Button>
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="lg:hidden text-primary-foreground"
+            >
+              {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
+
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="lg:hidden py-4 border-t border-border">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="block w-full text-left py-2 text-primary-foreground hover:text-accent transition-colors font-inter"
+                >
+                  {item.label}
+                </button>
+              ))}
+              <Button
+                variant="default"
+                className="w-full mt-4 bg-accent hover:bg-accent/90"
+                onClick={() => scrollToSection("consultation")}
+              >
+                Консультация
+              </Button>
+            </div>
+          )}
+        </div>
+      </nav>
+    </>
+  );
+};
+
+export default Navigation;
