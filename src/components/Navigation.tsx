@@ -38,6 +38,12 @@ const Navigation = () => {
       return;
     }
     
+    if (id === "contacts") {
+      navigate("/contacts");
+      setIsMobileMenuOpen(false);
+      return;
+    }
+    
     if (location.pathname !== "/") {
       navigate("/");
       setTimeout(() => {
