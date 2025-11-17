@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react";
 import { Menu, X, MessageCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isBannerVisible, setIsBannerVisible] = useState(true);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,32 +36,39 @@ const Navigation = () => {
   return (
     <>
       {/* Avito Banner */}
-      <div className="bg-accent text-accent-foreground text-center py-2 px-4 text-sm font-inter">
-        Вся продукция доступна в нашем{" "}
-        <a
-          href="https://www.avito.ru/brands/alexandrhovrino"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="underline font-semibold hover:opacity-80 transition-opacity"
-        >
-          магазине на Авито
-        </a>
-      </div>
+      {isBannerVisible && (
+        <div className="bg-accent text-accent-foreground text-center py-2 px-4 text-sm font-inter relative">
+          Вся продукция доступна в нашем{" "}
+          <a
+            href="https://www.avito.ru/brands/alexandrhovrino"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline font-semibold hover:opacity-80 transition-opacity"
+          >
+            магазине на Авито
+          </a>
+          <button
+            onClick={() => setIsBannerVisible(false)}
+            className="absolute right-4 top-1/2 -translate-y-1/2 hover:opacity-70 transition-opacity"
+            aria-label="Закрыть"
+          >
+            <X size={16} />
+          </button>
+        </div>
+      )}
 
       {/* Navigation */}
       <nav
-        className={`fixed top-10 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-primary shadow-lg" : "bg-primary/95 backdrop-blur-sm"
-        }`}
+        className={`fixed ${isBannerVisible ? 'top-10' : 'top-0'} left-0 right-0 z-50 transition-all duration-300 bg-primary shadow-lg`}
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <button
               onClick={() => scrollToSection("hero")}
-              className="text-primary-foreground font-oswald text-xl font-semibold hover:text-accent transition-colors uppercase"
+              className="hover:opacity-80 transition-opacity"
             >
-              Alexander Ховрино
+              <img src={logo} alt="Alexander Ховрино" className="h-10" />
             </button>
 
             {/* Desktop Navigation */}
