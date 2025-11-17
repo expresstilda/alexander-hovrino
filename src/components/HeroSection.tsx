@@ -33,7 +33,7 @@ const HeroSection = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center fade-in">
           <Button
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-accent-foreground font-inter text-base px-8 py-6 rounded-lg shadow-lg hover:shadow-xl transition-all"
+            className="bg-accent hover:bg-accent/90 text-accent-foreground font-inter text-base px-8 py-6 shadow-lg hover:shadow-xl transition-all"
             onClick={() =>
               window.open("https://www.avito.ru/brands/alexandrhovrino", "_blank")
             }

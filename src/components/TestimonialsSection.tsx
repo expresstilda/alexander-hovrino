@@ -39,7 +39,7 @@ const TestimonialsSection = () => {
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-20 h-20 rounded-full object-cover border-2 border-accent"
+                  className="w-20 h-20 object-cover border-2 border-accent"
                 />
                 <div className="ml-4">
                   <h3 className="text-lg font-oswald">{testimonial.name}</h3>

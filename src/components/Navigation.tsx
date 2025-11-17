@@ -54,8 +54,25 @@ const Navigation = () => {
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            {/* Social Icons and Logo */}
-            <div className="flex items-center gap-4">
+            {/* Logo */}
+            <button
+              onClick={() => scrollToSection("hero")}
+              className="text-primary-foreground font-oswald text-xl font-semibold hover:text-accent transition-colors uppercase"
+            >
+              Alexander Ховрино
+            </button>
+
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center space-x-8">
+              {navItems.map((item) => (
+                <button
+                  key={item.id}
+                  onClick={() => scrollToSection(item.id)}
+                  className="text-primary-foreground hover:text-accent transition-colors font-inter text-sm uppercase"
+                >
+                  {item.label}
+                </button>
+              ))}
               <a
                 href="https://t.me/your_telegram"
                 target="_blank"
@@ -74,25 +91,6 @@ const Navigation = () => {
               >
                 <MessageCircle size={20} />
               </a>
-              <button
-                onClick={() => scrollToSection("hero")}
-                className="text-primary-foreground font-oswald text-xl font-semibold hover:text-accent transition-colors uppercase"
-              >
-                Alexander Ховрино
-              </button>
-            </div>
-
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-8">
-              {navItems.map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="text-primary-foreground hover:text-accent transition-colors font-inter text-sm uppercase"
-                >
-                  {item.label}
-                </button>
-              ))}
               <Button
                 variant="default"
                 size="sm"

@@ -41,7 +41,7 @@ const TournamentSection = () => {
           {videos.map((video, index) => (
             <div
               key={index}
-              className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all hover-scale group"
+              className="bg-card border border-border overflow-hidden hover:shadow-lg transition-all hover-scale group"
             >
               <div className="relative">
                 <img
@@ -50,11 +50,11 @@ const TournamentSection = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-center justify-center">
-                  <div className="bg-accent rounded-full p-4 group-hover:scale-110 transition-transform">
+                  <div className="bg-accent p-4 group-hover:scale-110 transition-transform">
                     <Play className="w-8 h-8 text-white" fill="white" />
                   </div>
                 </div>
-                <span className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 rounded text-sm font-inter">
+                <span className="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 text-sm font-inter">
                   {video.duration}
                 </span>
               </div>

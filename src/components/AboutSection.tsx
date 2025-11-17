@@ -58,7 +58,7 @@ const AboutSection = () => {
                 return (
                   <div
                     key={index}
-                    className="bg-card border border-border rounded-xl p-6 hover:shadow-md transition-shadow"
+                    className="bg-card border border-border p-6 hover:shadow-md transition-shadow"
                   >
                     <Icon className="w-8 h-8 text-accent mb-3" />
                     <h3 className="text-xl font-oswald mb-2">
@@ -83,7 +83,7 @@ const AboutSection = () => {
             <img
               src={showroomImage}
               alt="Наш шоурум"
-              className="rounded-xl shadow-2xl w-full h-auto"
+              className="shadow-2xl w-full h-auto"
             />
           </div>
         </div>

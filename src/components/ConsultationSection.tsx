@@ -45,14 +45,14 @@ const ConsultationSection = () => {
               <img
                 src={expertImage}
                 alt="Александр Ховрино"
-                className="w-64 h-64 rounded-full border-4 border-accent object-cover mx-auto"
+                className="w-64 h-64 border-4 border-accent object-cover mx-auto"
               />
             </div>
             <h3 className="text-3xl font-oswald mb-2">Александр Ховрино</h3>
             <p className="text-lg font-inter text-muted-foreground mb-6">
               Основатель компании, судовой техник с 10-летним стажем
             </p>
-            <div className="bg-card border-l-4 border-accent p-6 rounded-lg">
+            <div className="bg-card border-l-4 border-accent p-6">
               <Quote className="w-8 h-8 text-accent mb-3" />
               <p className="text-lg font-inter italic leading-relaxed">
                 "За 10 лет работы я помог более 2000 рыбаков собрать идеальный
@@ -63,7 +63,7 @@ const ConsultationSection = () => {
           </div>
 
           {/* Consultation Form */}
-          <div className="bg-card border border-border rounded-xl p-8">
+          <div className="bg-card border border-border p-8">
             <h2 className="text-3xl font-oswald mb-4">
               Консультация от эксперта
             </h2>
