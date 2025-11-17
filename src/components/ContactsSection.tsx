@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MapPin, Clock, Phone, Mail, MessageCircle } from "lucide-react";
+import entranceImage from "@/assets/entrance.webp";
 
 const ContactsSection = () => {
   return (
@@ -85,7 +86,7 @@ const ContactsSection = () => {
                 </Button>
                 <Button
                   size="lg"
-                  className="flex-1 bg-accent hover:bg-accent/90"
+                  className="flex-1 bg-accent hover:bg-accent/90 text-black"
                   onClick={() =>
                     window.open("https://www.avito.ru/brands/alexandrhovrino", "_blank")
                   }
@@ -101,7 +102,7 @@ const ContactsSection = () => {
             </p>
             <Button
               size="lg"
-              className="bg-accent hover:bg-accent/90"
+              className="bg-accent hover:bg-accent/90 text-black"
               onClick={() =>
                 window.open(
                   "https://yandex.ru/maps/?text=Москва, ул. Речная, д. 15, строение 3",
@@ -113,16 +114,28 @@ const ContactsSection = () => {
             </Button>
           </div>
 
-          {/* Map */}
-          <div className="bg-muted overflow-hidden h-96 lg:h-auto">
-            <iframe
-              src="https://yandex.ru/map-widget/v1/?um=constructor%3A&amp;source=constructor"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              title="Карта шоурума Alexander Ховрино"
-              className="min-h-[400px]"
-            />
+          {/* Photo and Map */}
+          <div className="flex flex-col gap-4 h-96 lg:h-auto">
+            {/* Entrance Photo */}
+            <div className="h-1/2 lg:h-64 overflow-hidden">
+              <img 
+                src={entranceImage} 
+                alt="Вход в шоурум Alexander Ховрино" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            
+            {/* Map */}
+            <div className="bg-muted overflow-hidden h-1/2 lg:flex-1">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A&amp;source=constructor"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                title="Карта шоурума Alexander Ховрино"
+                className="min-h-[200px]"
+              />
+            </div>
           </div>
         </div>
       </div>

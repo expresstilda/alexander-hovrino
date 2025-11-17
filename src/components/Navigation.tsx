@@ -110,7 +110,7 @@ const Navigation = () => {
                 variant="default"
                 size="sm"
                 onClick={() => scrollToSection("consultation")}
-                className="bg-accent hover:bg-accent/90 uppercase font-oswald"
+                className="bg-accent hover:bg-accent/90 text-black uppercase font-oswald font-light"
               >
                 Консультация
               </Button>
@@ -139,7 +139,7 @@ const Navigation = () => {
               ))}
               <Button
                 variant="default"
-                className="w-full mt-4 bg-accent hover:bg-accent/90 uppercase font-oswald"
+                className="w-full mt-4 bg-accent hover:bg-accent/90 text-black uppercase font-oswald font-light"
                 onClick={() => scrollToSection("consultation")}
               >
                 Консультация
