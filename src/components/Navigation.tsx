@@ -83,7 +83,7 @@ const Navigation = () => {
                 </button>
               ))}
               <a
-                href="https://t.me/your_telegram"
+                href="https://t.me/alexandrhovrino"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-foreground hover:text-accent transition-colors"
@@ -92,13 +92,19 @@ const Navigation = () => {
                 <Send size={20} />
               </a>
               <a
-                href="https://wa.me/your_whatsapp"
+                href="https://wa.me/79624629315"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary-foreground hover:text-accent transition-colors"
                 aria-label="WhatsApp"
               >
                 <MessageCircle size={20} />
+              </a>
+              <a
+                href="tel:+79624629315"
+                className="text-primary-foreground hover:text-accent transition-colors font-inter text-sm font-semibold"
+              >
+                +7 (962) 462-93-15
               </a>
               <Button
                 variant="default"
