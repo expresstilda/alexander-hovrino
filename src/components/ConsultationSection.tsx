@@ -44,11 +44,11 @@ const ConsultationSection = () => {
             <div className="inline-block mb-6">
               <img
                 src={expertImage}
-                alt="Александр Ховрино"
+                alt="Антон Ховрино"
                 className="w-64 h-64 border-4 border-accent object-cover mx-auto"
               />
             </div>
-            <h3 className="text-3xl font-oswald mb-2">Александр Ховрино</h3>
+            <h3 className="text-3xl font-oswald mb-2">Антон Ховрино</h3>
             <p className="text-lg font-inter text-muted-foreground mb-6">
               Основатель компании, судовой техник с 10-летним стажем
             </p>
