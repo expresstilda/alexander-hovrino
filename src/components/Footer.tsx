@@ -144,20 +144,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="mt-4 p-4 bg-accent/10 text-center">
-            <p className="text-sm font-inter">
-              Покупайте оборудование в нашем официальном{" "}
-              <a
-                href="https://www.avito.ru/brands/alexandrhovrino"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-accent font-semibold hover:underline"
-              >
-                магазине на Авито
-              </a>{" "}
-              — гарантия качества и официальная поддержка!
-            </p>
-          </div>
         </div>
       </div>
     </footer>
