@@ -27,6 +27,12 @@ const Navigation = () => {
       return;
     }
     
+    if (id === "about-page") {
+      navigate("/about");
+      setIsMobileMenuOpen(false);
+      return;
+    }
+    
     if (location.pathname !== "/") {
       navigate("/");
       setTimeout(() => {
@@ -47,7 +53,7 @@ const Navigation = () => {
   const navItems = [
     { label: "Главная", id: "hero" },
     { label: "Продукция", id: "products" },
-    { label: "О нас", id: "about" },
+    { label: "О нас", id: "about-page" },
     { label: "Новости", id: "news" },
     { label: "Контакты", id: "contacts" },
   ];
