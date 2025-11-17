@@ -1,4 +1,5 @@
 import { MessageCircle, Send, Youtube } from "lucide-react";
+import logoFooter from "@/assets/logo-footer.png";
 
 const Footer = () => {
   const scrollToSection = (id: string) => {
@@ -15,7 +16,7 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-2xl font-oswald mb-3">Alexander Ховрино</h3>
+              <img src={logoFooter} alt="Alexander Ховрино" className="h-12 mb-4" />
               <p className="text-sm font-inter mb-4">
                 Экспертное оснащение лодок и катеров под ключ
               </p>
