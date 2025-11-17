@@ -77,7 +77,7 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-primary-foreground hover:text-accent transition-colors font-inter text-sm uppercase"
+                  className="text-primary-foreground hover:text-accent transition-colors font-oswald text-base uppercase"
                 >
                   {item.label}
                 </button>
@@ -126,7 +126,7 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left py-2 text-primary-foreground hover:text-accent transition-colors font-inter uppercase"
+                  className="block w-full text-left py-2 text-primary-foreground hover:text-accent transition-colors font-oswald text-base uppercase"
                 >
                   {item.label}
                 </button>
