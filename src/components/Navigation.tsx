@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, MessageCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -54,13 +54,33 @@ const Navigation = () => {
       >
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
-            {/* Logo */}
-            <button
-              onClick={() => scrollToSection("hero")}
-              className="text-primary-foreground font-oswald text-xl font-semibold hover:text-accent transition-colors"
-            >
-              Alexander Ховрино
-            </button>
+            {/* Social Icons and Logo */}
+            <div className="flex items-center gap-4">
+              <a
+                href="https://t.me/your_telegram"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-foreground hover:text-accent transition-colors"
+                aria-label="Telegram"
+              >
+                <Send size={20} />
+              </a>
+              <a
+                href="https://wa.me/your_whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-foreground hover:text-accent transition-colors"
+                aria-label="WhatsApp"
+              >
+                <MessageCircle size={20} />
+              </a>
+              <button
+                onClick={() => scrollToSection("hero")}
+                className="text-primary-foreground font-oswald text-xl font-semibold hover:text-accent transition-colors uppercase"
+              >
+                Alexander Ховрино
+              </button>
+            </div>
 
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center space-x-8">
@@ -68,7 +88,7 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-primary-foreground hover:text-accent transition-colors font-inter text-sm"
+                  className="text-primary-foreground hover:text-accent transition-colors font-inter text-sm uppercase"
                 >
                   {item.label}
                 </button>
@@ -99,7 +119,7 @@ const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left py-2 text-primary-foreground hover:text-accent transition-colors font-inter"
+                  className="block w-full text-left py-2 text-primary-foreground hover:text-accent transition-colors font-inter uppercase"
                 >
                   {item.label}
                 </button>

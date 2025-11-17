@@ -43,7 +43,7 @@ const HeroSection = () => {
           <Button
             size="lg"
             variant="outline"
-            className="border-2 border-white text-white hover:bg-white hover:text-primary font-inter text-base px-8 py-6 rounded-lg transition-all"
+            className="border-2 border-white text-black bg-white hover:bg-white/90 font-inter text-base px-8 py-6 transition-all"
             onClick={() => scrollToSection("consultation")}
           >
             Записаться на консультацию
