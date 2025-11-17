@@ -52,7 +52,7 @@ const ProductCategories = () => {
             return (
               <div
                 key={index}
-                className="bg-card border border-border rounded-xl p-8 hover:shadow-lg transition-all hover-scale"
+                className="bg-card border border-border p-8 hover:shadow-lg transition-all hover-scale"
               >
                 <div className="mb-4">
                   <Icon className="w-12 h-12 text-accent" />

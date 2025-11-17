@@ -25,7 +25,7 @@ const BrandLogos = () => {
           {brands.map((brand) => (
             <div
               key={brand}
-              className="bg-card border border-border rounded-lg p-8 flex items-center justify-center hover:shadow-lg transition-shadow hover-scale"
+              className="bg-card border border-border p-8 flex items-center justify-center hover:shadow-lg transition-shadow hover-scale"
             >
               <span className="text-2xl font-oswald text-foreground">{brand}</span>
             </div>

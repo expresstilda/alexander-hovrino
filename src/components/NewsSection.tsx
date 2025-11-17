@@ -36,7 +36,7 @@ const NewsSection = () => {
           {news.map((item, index) => (
             <div
               key={index}
-              className="bg-card border border-border rounded-xl overflow-hidden hover:shadow-lg transition-all hover-scale"
+              className="bg-card border border-border overflow-hidden hover:shadow-lg transition-all hover-scale"
             >
               <img
                 src={item.image}

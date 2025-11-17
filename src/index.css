@@ -36,7 +36,7 @@ All colors MUST be HSL.
     --input: 220 13% 91%;
     --ring: 0 0% 8.6%;
 
-    --radius: 0.5rem;
+    --radius: 0rem;
 
     --hero-overlay: 0 0% 0%;
   }
@@ -81,6 +81,12 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000000;
   }
 
   h1, h2, h3, h4, h5, h6 {

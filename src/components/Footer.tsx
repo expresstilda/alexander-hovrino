@@ -144,7 +144,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="mt-4 p-4 bg-accent/10 rounded-lg text-center">
+          <div className="mt-4 p-4 bg-accent/10 text-center">
             <p className="text-sm font-inter">
               Покупайте оборудование в нашем официальном{" "}
               <a

@@ -72,7 +72,7 @@ const ContactsSection = () => {
               </div>
             </div>
 
-            <div className="bg-secondary border border-border rounded-xl p-6 mb-6">
+            <div className="bg-secondary border border-border p-6 mb-6">
               <h3 className="text-xl font-oswald mb-4">Где купить оборудование</h3>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button
@@ -114,7 +114,7 @@ const ContactsSection = () => {
           </div>
 
           {/* Map */}
-          <div className="bg-muted rounded-xl overflow-hidden h-96 lg:h-auto">
+          <div className="bg-muted overflow-hidden h-96 lg:h-auto">
             <iframe
               src="https://yandex.ru/map-widget/v1/?um=constructor%3A&amp;source=constructor"
               width="100%"
