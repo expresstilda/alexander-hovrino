@@ -1,41 +1,62 @@
 import { Button } from "@/components/ui/button";
-import { Waves, Camera, Radio, Ship, Wrench } from "lucide-react";
+import { Waves, Zap, Volume2, Snowflake, Ship, Wrench, Compass, ShirtIcon } from "lucide-react";
 
 const ProductCategories = () => {
   const categories = [
     {
       icon: Waves,
-      title: "Эхолоты и Картплоттеры",
+      title: "Эхолоты и картплоттеры",
       description:
         "Современные системы сканирования водоемов с высоким разрешением и GPS-навигацией для точного позиционирования",
       link: "https://www.avito.ru/brands/alexandrhovrino",
     },
     {
-      icon: Camera,
-      title: "Системы живого обзора (LiveScaning)",
+      icon: Zap,
+      title: "Электромоторы",
       description:
-        "Передовые технологии подводного наблюдения в реальном времени для максимально эффективной ловли",
+        "Мощные и надежные электромоторы для лодок с точным управлением и длительной автономностью работы",
       link: "https://www.avito.ru/brands/alexandrhovrino",
     },
     {
-      icon: Radio,
-      title: "Датчики (Трандьюсеры)",
+      icon: Volume2,
+      title: "Морская акустика",
       description:
-        "Высокоточные датчики для различных условий: боковое сканирование, DownVü, SideVü, CHIRP технологии",
+        "Профессиональные аудиосистемы для катеров и лодок с защитой от влаги и отличным качеством звука",
+      link: "https://www.avito.ru/brands/alexandrhovrino",
+    },
+    {
+      icon: Snowflake,
+      title: "Товары для зимней рыбалки",
+      description:
+        "Специализированное оборудование для подледной рыбалки: эхолоты, ледобуры, палатки и аксессуары",
       link: "https://www.avito.ru/brands/alexandrhovrino",
     },
     {
       icon: Ship,
-      title: "Лодочные моторы (Троллинговые)",
+      title: "Оборудование для катеров и лодок",
       description:
-        "Электрические троллинговые моторы с точным управлением и длительной автономностью для бесшумного передвижения",
+        "Комплексные решения для оснащения катеров: навигация, освещение, системы безопасности и управления",
       link: "https://www.avito.ru/brands/alexandrhovrino",
     },
     {
       icon: Wrench,
-      title: "Аксессуары и Крепления",
+      title: "Аксессуары и крепления",
       description:
         "Полный спектр креплений, кабелей, защитных чехлов и других аксессуаров для профессиональной установки",
+      link: "https://www.avito.ru/brands/alexandrhovrino",
+    },
+    {
+      icon: Compass,
+      title: "Картография и навигация",
+      description:
+        "Цифровые карты водоемов, GPS-навигаторы и программное обеспечение для точного ориентирования",
+      link: "https://www.avito.ru/brands/alexandrhovrino",
+    },
+    {
+      icon: ShirtIcon,
+      title: "Одежда",
+      description:
+        "Специализированная одежда для рыбалки: водонепроницаемые костюмы, термобелье и защитная экипировка",
       link: "https://www.avito.ru/brands/alexandrhovrino",
     },
   ];
