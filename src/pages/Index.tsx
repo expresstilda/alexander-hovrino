@@ -3,6 +3,8 @@ import HeroSection from "@/components/HeroSection";
 import BrandLogos from "@/components/BrandLogos";
 import ProductCategories from "@/components/ProductCategories";
 import AboutSection from "@/components/AboutSection";
+import ShowroomGalleryParallax from "@/components/ShowroomGalleryParallax";
+import ShowroomGalleryPinned from "@/components/ShowroomGalleryPinned";
 import TournamentSection from "@/components/TournamentSection";
 import ConsultationSection from "@/components/ConsultationSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
@@ -20,6 +22,8 @@ const Index = () => {
         <BrandLogos />
         <ProductCategories />
         <AboutSection />
+        <ShowroomGalleryParallax />
+        <ShowroomGalleryPinned />
         <TournamentSection />
         <ConsultationSection />
         <TestimonialsSection />
